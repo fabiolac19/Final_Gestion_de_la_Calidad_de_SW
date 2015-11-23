@@ -83,279 +83,115 @@
 				</section>
 
 				<section data-transition="linear" data-background="#3D9999" data-background-transition="slide">
-							<h2>Plan de Remoción de Defectos</h2>
-							<center>
-								</section>
-								<section data-background="Imagenes/planIntegraldeRemoliciondeDefectos.png">
-								</section>								
-							</center>
+							<section>
+							<h2>Remoción de defectos</h2>							
+							</section>
+							<section> 
+								<h4>Analisis de codigo utilizando herramienta LocMetrics</h4>
+								<img width="900" height="400" src="Imagenes/LocMetris.PNG">
+							</section>
+							<section>
+								<h3>Plan de remoción de defectos</h3>
+								<p>Se estimo cantidad de defectos en cada etapa utilizando Plan Integral</p>
+							</section>
+							<section>								
+								<img width="2000" height="700" src="Imagenes/planIntegraldeRemoliciondeDefectos.png">
+							</section>
+							<section>
+								<h3>Defectos identificados</h3>
+								<p>
+									Al finalizar la materia Ingeniería de SW se encontraron 5 bugs, de los cuales se corrigieron solamente 3, y se dejaron 2 para implementaciónes futuras. 
+									La estimación de defectos en base a la cantidad de lineas de código resulto 45 defectos en total. Por lo que los defectos detectados durante la realización del trabajo representan solo el 11%.
+								</p>
+							</section>
 				</section>
-				<!--
-					<section>
-						<center>
-							<table>
-									<tr>
-										<td>
-											<img width="400" height="400" src="Imagenes/eclipse.png" alt="eclipse">
-										</td>
-
-										<td>
-											<img width="400" height="400" src="Imagenes/JUNIT1.png" alt="junit">
-										</td>
-									</tr>
-							</table>
-						</center>
-					</section>
-				</section>
-			-->
-				<!-- Example of nested vertical slides -->
+				
 				<section data-transition="linear" data-background="#8D614C" data-background-transition="slide">
 					<section>
-						<h2>Manejo de Configuraciones</h2>
-						<img src="Imagenes/CM.png" alt="CM">
-						<!-- <a href="#" class="image navigate-down" -->
+						<h2>Revisión de los requerimientos</h2>						
 					</section>
 					<section>
-						<h2>Roles</h2>
-						<ul>
-							<li>Barbiani es el Engineering Manager (EM)</li>
-							<li>Campos es el Release Manager (RM)</li>
-							<li>Gutierrez es el PSO Representative</li>
-							<li>Morales es el Global Project Configuration Manager (GPCM)</li>
-						</ul>
-					</section>
-					<section theme=sky#/themes>
-						<h2>Herramienta de Control de Versiones</h2>
-						<h3>"Git y Github"</h3>
+						<h3>Requerimientos Funcionales</h3>
 						<p>
-							Todos solicitan pull al <a href="https://github.com/Andresteve07/FinalIngDeSoftware">repositorio principal</a>.
-						</p>
-						<img width="900" height="220" src="Imagenes/branchFINAL.png" alt="Ramas">
+							Debido a que por consigna cada grupo podía definir la funcionalidad principal del proyecto, es razonable asumir que todos los requerimientos funcionales estan contemplados.
+						</p>						
 					</section>
 					<section>
-						<h2>Seguimiento de Errores</h2>
-						<p>Usamos los ISSUES de la herramienta github.</p>
-						<img  src="Imagenes/issuesgithub.png" alt="Issues">
+						<h3>Requerimientos No Funcionales</h3>
+						<p>
+							Una vez implementado VANESA se puede observar que faltaron definir varios requerimientos no funcionales relacionados con:
+							<ul>
+								<li>Usabilidad: falta de consistencia en la interfaz de usuario</li>
+								<li>Rendimiento: tiempo de respuesta y refrescos</li>
+								<li>Apariencia: acoplar ventanas individuales dispersas en una sola</li>
+							</ul>
+						</p>						
+					</section>
+					<section>
+						<h3>Documentación de requerimientos</h3>
+						<p>
+							Para la sistematización del registro de requerimientos se empleo por una herramienta de software denominada VisualParadigm. Desafortunadamente la misma no ofrece una lista incluyendo todos los requerimientos, sino que los muestra en cuadros, los cuales recortan la descripción de los requerimientos y dificultan su posterior lectura.
+							En cuanto a la redacción de los mismos se opto por la descripción coloquial y a nivel de desarrollo. No obstante, debería respetarse una forma estandar de documentación empleando las plantillas.
+						</p>
+					</section>
+					<section>
+						<h3>Revisión de requerimientos</h3>
+					</section>
+					<section>
+						<img width="2000" height="700" src="Imagenes/revisionReq.PNG">
+					</section>
+					<section>
+						<h3>Defectos en los requerimientos</h3>
+						<p>Como el equipo de desarrollo definió la mayoria de los requerimientos, no existen errores por falta de entendimiento</p>
 					</section>
 				</section>
 
 				<section data-background="#007777" data-transition="linear" data-background-transition="slide">
 					<section>
-						<h2>Requerimientos del Sistema</h2>
+						<h2>Revisión del diseño</h2>
 						<p>
 							Los requerimeintos del sistema se definieron al comienzo del proyecto y se verificaron
 							al final.
 						</p>
-					</section>
-					<section>
-						<img  width="150%" height="150%" src="Imagenes/Req1.PNG" alt="Req1">
-					</section>
-					<section>
-						<img  width="120%" height="120%" src="Imagenes/Req2.PNG" alt="Req2">
-					</section>
-					<section>
-						<img width="110%" height="110%" src="Imagenes/Req3.PNG" alt="Req3">
 					</section>
 
 				</section>
 
 				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
 					<section>
-					<h2>Arquitectura de Software</h2>
+					<h2>Revisión de código</h2>
 					<p>
 						Se establece una aquitectura de software inicial en términos de los
 						diagramas de <strong>componentes</strong> y <strong>despliegue</strong>.
 					</p>
 					</section>
 
-					<section>
-						<img  src="Imagenes/Comp.PNG" alt="Comp">
-					</section>
-
-					<section>
-						<img src="Imagenes/Desp.PNG" alt="Desp">
-					</section>
-
 				</section>
 
+				<section data-transition="linear" data-background="#CC483D" data-background-transition="slide">
+					<section>
+					<h2>Análisis estático de código</h2>
+					</section>
+				</section>
+				
+				<section data-transition="linear" data-background="#3D81CC" data-background-transition="slide">
+					<section>
+						<h2>Pruebas Unitarias</h2>						
+					</section>
+				</section>
+
+				<section data-transition="linear" data-background="#FFDA58" data-background-transition="slide">
+					<section>
+						<h2>Pruebas de Sistema</h2>						
+					</section>
+				</section>
 				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
 					<section>
-					<h2>Diseño e Implementación</h2>
-					<p>
-						Conforme a las consideraciones del análisis preliminar del proyecto
-						se definen las clases necesarias para construir el sistema y cumplir
-						con los <strong>Requerimientos</strong>.
-					</p>
+						<h2>Punto 8</h2>						
 					</section>
-
-					<section data-background="Imagenes/DIAGRAMADECLASEFINAL.jpg">
-					</section>
-
-					<section>
-						<p>
-							Clases implementadas:
-						</p>
-						<ul>
-							<li>DJView</li>
-							<li>VANESAController</li>
-							<li>VANESAView</li>
-							<li>VANESAModel</li>
-						</ul>
-					</section>
-
-					<section>
-						<h1>¿VANESA?</h1>
-					</section>
-
-					<section>
-							<blockquote>
-								Inicialmente se había propuesto desarrollar un modelo capaz de correr un algoritmo de cálculo
-								de componentes de amplitudes de frecuencias de la entrada del micrófono (Discrete Fourier Transform)
-								y luego mostrar los resultados para un rango de frecuencias en el frame del BeatBar. Por lo tanto el
-								nombre VANESA es un acrónimo para:
-							</blockquote>
-							<ul>
-								<li> <strong>V:</strong> Vizualización</li>
-								<li> <strong>AN:</strong> Análisis</li>
-								<li> <strong>ES:</strong> Espectro</li>
-								<li> <strong>A:</strong> Audio</li>
-							</ul>
-					</section>
-
-					<section>
-						<h2>Pero...</h2>
-							<p>
-								La complejidad del argoritmo necesario y el poco tiempo con el que contábamos
-								hizo que necesitáramos del plan de contingencias, la alternativa más sencilla.
-								Por lo que decidimos desarrollarun modelo que calcule el valor eficaz de 1600
-								capturas de audio y muestre el nivel en la frecuencia de pulsación del BeatBar
-								y luego en el porcentaje de llenado de una nueva vista.
-							</p>
-					</section>
-
-					<section>
-						<img  width="200%" height="200%" src="Imagenes/leooonnvanesaaa.png" alt="Genial">
-					</section>
-
-
-					<section>
-						<h2>DJView</h2>
-						<p>
-							Es una clase que se encontraba ya implementada por el código
-							fuente original. Sin embargo, se le realizaron las siguientes
-							modificaciones a fin de satisfacer los requerimientos pertinentes:
-						</p>
-						<ul>
-							<li>
-								<code class="fragment">setModel : void:</code>
-								<blockquote class="fragment">
-									es el encargado de determinar qué modelo se mostrará por la
-									 vista. Para hacerlo eficientemente, primeramente remueve
-									los observadores antiguos, refresca el modelo actual al
-									deseado, y finalmente vuelve a registrar los observadores.
-								</blockquote>
-							</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>DJView</h2>
-						<ul>
-							<li>
-								<code class="fragment">createView : void:</code>
-								<blockquote class="fragment">
-									para que crear un menú nuevo (con sus correspondientes items)
-									dentro del frame del BeatBar, así con el permitir seleccionar entre los distintos modelos.
-								</blockquote>
-							</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>VANESAController</h2>
-						<p>
-							Esta clase está encargada de tomar los datos de la View, (de acuer
-							do a la estrategia MVC), los procesa y con ellos ejecuta funciones
-							 del VANESAModel, logrando así la interacción desde el View, pasan
-							do por el Controller hasta el Model.
-						</p>
-					</section>
-
-					<section>
-						<h2>VANESAView</h2>
-						<p>
-							Es la clase encargada de crear una vista para representar el modelo VANESAModel. Sus funciones son:
-						</p>
-						<ul>
-							<li>
-								<code class="fragment">VANESAView : VANESAView:</code>
-								<blockquote class="fragment">
-									Registra los observadores (BeatObserver y BPMObserver) al modelo
-									VANESAModel. A continuación crea una barra de progreso <code>jp : JProgressBar</code> a fin de con ella representar gráficamente el nivel de volumen leído por el micrófono.
-								</blockquote>
-							</li>
-							<li>
-								<code class="fragment">(@Override) updateBPM : void:</code>
-								<blockquote class="fragment">
-									Este método refresca la etiqueta que muestra el nivel de volumen del micrófono.
-								</blockquote>
-							</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>VANESAView</h2>
-						<ul>
-							<li>
-								<code class="fragment">(@Override) updateBeat : void:</code>
-								<blockquote class="fragment">
-									En esta función, bajo ciertas condiciones, se "pinta" el valor de volumen del micrófono.
-								</blockquote>
-							</li>
-						</ul>
-					</section>
-
-					<section>
-						<h2>VANESAModel</h2>
-						<p>
-							Esta clase es un hilo que representa el comportamiento descrito por el REQ_FUN_004 y sus requerimientos derivados. Sus clases mas importantes son:
-						</p>
-						<ul>
-							<li>
-								<code class="fragment">calculateRMSLevel : int:</code>
-								<blockquote class="fragment">
-									Calcula y devuelva el valor eficaz de un vector del tipo byte.
-								</blockquote>
-							</li>
-							<li>
-								<code class="fragment">getAudioFormat : AudioFormat:</code>
-								<blockquote class="fragment">
-									Define la frecuencia de muestreo, el tamaño en bits del vector
-									, el número de canales y otras variables y devuelve un nuevo
-									objeto AudioFormat con el cual se realizará la captura de
-									audio del micrófono.
-								</blockquote>
-							</li>
-						</ul>
-					</section>
-
-					<section>
-						<ul>
-							<li>
-								<code class="fragment">run : void:</code>
-								<blockquote class="fragment">
-									Lee la información de audio de la línea de entrada del buffer.
-									Luego se calcula el valor RMS del arreglo de bytes y con él
-									genera una lectura que representa el volumen de la entrada por
-									micrófono. Finalmente se notifica a todos los observadores.
-									Cabe aclarar que al momento de notificar al BeatBar, este se
-									hace cada un período mayor cuanto menor sea el volumen leído.
-								</blockquote>
-							</li>
-						</ul>
-					</section>
-
 				</section>
+
+
 
 				<section>
 					<!-- <h1>EL FIN <span style="font-size:60px">(por fin)</span> </h1> -->
