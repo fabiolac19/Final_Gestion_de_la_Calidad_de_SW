@@ -142,41 +142,85 @@
 					</section>
 					<section>
 						<h3>Defectos en los requerimientos</h3>
-						<p>Como el equipo de desarrollo definió la mayoria de los requerimientos, no existen errores por falta de entendimiento</p>
+						<p>Como el equipo de desarrollo definió la mayoria de los requerimientos, es razonable asumir que no existen errores por falta de entendimiento, sino por las desviaciónes deliberadas de los requerimientos en etapas posteriores y problemas de semántica.</p>
+						<p>Se encontraron solo 2 errores de los 7 errores estimados.</p>
 					</section>
 				</section>
 
 				<section data-background="#007777" data-transition="linear" data-background-transition="slide">
 					<section>
-						<h2>Revisión del diseño</h2>
-						<p>
-							Los requerimeintos del sistema se definieron al comienzo del proyecto y se verificaron
-							al final.
-						</p>
+						<h2>Revisión del diseño</h2>						
 					</section>
-
+					<section>
+						<h3>Se elaboró el siguiente reporte de revisión</h3>						
+					</section>
+					<section>								
+						<img width="2000" height="700" src="Imagenes/RevisionDeDiseño.png">
+					</section>							
+					<section>
+						<h3>Defectos del Diseño</h3>						
+						<p>Se encontraron solo 4 errores de los 16 errores estimados.</p>
+						<p>Los defectos detectados durante la revisión representan solo el 25%.</p>
+					</section>
 				</section>
 
 				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
 					<section>
 					<h2>Revisión de código</h2>
-					<p>
-						Se establece una aquitectura de software inicial en términos de los
-						diagramas de <strong>componentes</strong> y <strong>despliegue</strong>.
-					</p>
 					</section>
-
+					
 				</section>
 
 				<section data-transition="linear" data-background="#CC483D" data-background-transition="slide">
 					<section>
 					<h2>Análisis estático de código</h2>
+					</section>					
+					<section>
+					<h3>Warnings de CheckStyle</h3>
+					<p>CheckStyle devuelve warnings en su mayoría de: pasar variables de publicas a privadas, buenas practicas de programación ( . seguido de espacio), faltan comentarios JavaDoc</p>
+					</section>
+					<section>								
+						<img width="2000" height="700" src="Imagenes/checkstile.png">
+					</section>	
+					<section>								
+					<h3>Warnings de PMD</h3>					
+					</section>
+					<section>								
+						<img width="2000" height="700" src="Imagenes/PMD2.png">
+					</section>	
+					<section>								
+						<img width="2000" height="700" src="Imagenes/PMD3.png">
+					</section>					
+					<section>
+					<p>PMD tiene los siguientes simbolos para identificar los bugs</p>
+					<img width="2000" height="700" src="Imagenes/pmdsimbolo.png">
 					</section>
 				</section>
 				
 				<section data-transition="linear" data-background="#3D81CC" data-background-transition="slide">
 					<section>
-						<h2>Pruebas Unitarias</h2>						
+					<h2>Pruebas Unitarias</h2>						
+					</section>
+					<section>
+					<h3>Defectos esperados</h3>	
+					<p>Se esperan encontrar xxxxxxxxx errores en esta etapa.</p>					
+					</section>
+					<section>
+					<h3>Diferencia entre conceptos</h3>	
+<!--  
+Instruction coverage provee informacion sobre la cantidad de codigo que seran testeadas
+Branch coverage cuenta el numero total de branchs en un metodo y determina cuantos seran ejecutados y cuantos no.
+Line coverage mide la cantidad de lineas de codigo testeadas.
+-->
+					<ul>
+								<li>Instruction coverage</li>
+								<li>Branch coverage</li>
+								<li>Line coverage</li>
+					</ul>				
+					</section>
+					<section>
+					<h3>Branch Coverage</h3>
+					<p>Elegimos Branch Coverage debido a que...</p>	
 					</section>
 				</section>
 
