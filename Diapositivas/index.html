@@ -175,8 +175,7 @@
 					<h2>Análisis estático de código</h2>
 					</section>					
 					<section>
-					<h3>Advertencias de CheckStyle</h3>
-					<p>CheckStyle devuelve warnings en su mayoría de: pasar variables de publicas a privadas, buenas practicas de programación, como por ejemplo un punto seguido de espacio, faltan comentarios JavaDoc</p>
+					<h3>Advertencias de CheckStyle</h3>					
 					</section>
 					<section>								
 						<img class="stretch" width="2000" height="700" src="Imagenes/checkstile.png">
@@ -206,9 +205,16 @@
 					</section>
 					<section>
 						<h3>Análisis de resultados</h3>
-						<p></p>
-						<!--
-						-->
+						<p>
+						Después de correr las herramientas de análisis estático de código puede observarse que en las clases implementadas se acumula un total de 1 advertencias y 7 errores los cuales poseen una criticidad alta:
+						<u1>
+							<li>Existen salidas por consola con propósito de un constructor privado no final.</li>
+							<li>Sobre buenas prácticas y estilos del lenguage.</li>
+							<li>Sobre la inicialización explícita de objetos.</li>
+						</u1>
+						En cuanto al impacto sobre el producto final podemos concluir que ninguno es crucial/decisívo para su funcionamiento.
+						Y el costo de su corrección es relativamente insignificante sin apreciarse algún beneficio apreciable.
+						</p>
 					</section>	
 
 				</section>
@@ -225,32 +231,46 @@
 						<p>Medición de porcentaje de código fuente cubierto por pruebas unitarias utilizando herramienta <strong>JaCoCo</strong></p>					
 					</section>					
 					<section>
-						<p>Medición de porcentaje de código fuente cubierto por pruebas unitarias utilizando herramienta <strong>JaCoCo</strong></p>					
-					</section>	
-					<section>
-						<img class="stretch" width="2000" height="500" src="Imagenes/jacoco_junit.png">
+						<img class="stretch" width="2000" height="500" src="Imagenes/branches_ok.png">
 					</section>										
 					<section>
 						<h2>Tipos de Coverage</h2>	
 					</section>
 					<section>
 						<h3>Instruction Coverage</h3>
-						<blockquote>Provee informacion sobre la cantidad de codigo ejecutado o perdido.</blockquote>
+						<blockquote>Provee informacion sobre la cantidad de codigo que se ha probado.</blockquote>
 						<hr>
 						<h3>Branch coverage</h3>
-						<blockquote>Provee el numero total de branches en un método y determina la cantidad de branches ejecutados o perdidos.</blockquote>
+						<blockquote>Nos indica cuanto posibles caminos (if else, while, for, …) se han probado.</blockquote>
 						<hr>
 						<h3>Line coverage</h3>
-						<blockquote>Mide la cantidad de lineas de codigo testeadas.</blockquote>
+						<blockquote> Cuantas líneas de este fichero se han probado.</blockquote>
 					</section>
 					<section>					
 						<p>Elegimos <b>BRANCH COVERAGE</b> debido a que refleja directamente todos los escenarios de los casos de uso. Se prueban todos los caminos independientes y por lo tanto se cubre toda la complejidad ciclomática.</p>	
 					</section>
 					<section>
-						<img class="stretch" width="2000" height="500" src="Imagenes/branches_ok.jpg">
+						<img class="stretch" width="2000" height="500" src="Imagenes/jacocoBranchCover.png">
 					</section>
 					<section>
-						<p>El Branch Coverage de nuestro proyecto es 21%</p>
+						<p>El Branch Coverage de nuestro proyecto es 14% (4 de 28). Considerando métricas como la complejidad ciclomática (McCabe) se deberían realizar 28+1=29 pruebas unitarias para cubrir los caminos independientes. Como nosotros realizamos 3 Unit Test deberiamos realizar 25 pruebas adicionales.
+						</p>
+					</section>	
+					<section>
+						<h2>Implementación de las pruebas unitarias</h2>
+						<p>Luego de realizar varias pruebas adicionales se pudo observar que se logró ampliar el valor de cobertura de 7.7% a 9%</p>
+					</section>
+					<section>
+						<img class="stretch" width="2000" height="500" src="Imagenes/jacocoBranchCover_POST.png">
+					</section>						
+					<section>
+						<p>El 100% de cobertura de caminos para todos los criterios no es el objetivo mas sensato porque nuestro poyecto es pequeño. El porcentaje de Branch Coverage deseable para un proyecto de software depende de:
+						<u1>
+							<li>Lo trabajado del programa</li>
+							<li>el costo de las fallas</li>
+							<li>De cuan tarde se comenzó a usar branch coverage con respecto al proceso de SW</li>
+						</u1>
+						</p>
 					</section>	
 				</section>
 
